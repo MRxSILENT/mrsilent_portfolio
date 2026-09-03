@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Social Tree — one beautiful page for all your links.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Social Tree — Your Name</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="bg-grid"></div>
+
+  <main class="page-shell">
+    <header class="topbar">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+        <span id="themeIcon">☾</span>
+      </button>
+
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>Social Tree</span>
+      </div>
+
+    </header>
+
+    <section class="profile-card reveal">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <div class="avatar" id="avatar">SG</div>
+        <span class="status-dot" title="Online"></span>
+      </div>
+
+      <div class="verified-row">
+        <h1 id="displayName">Silent Gamer</h1>
+        <span class="verified" aria-label="Verified">✓</span>
+      </div>
+
+      <p class="handle" id="displayHandle">@silentgamer</p>
+      <p class="bio" id="displayBio">
+        Creator • Minecraft • Technology<br>
+        Building things that make the internet more fun.
+      </p>
+
+      <div class="quick-stats">
+        <div><strong id="linkCount">7</strong><span>Links</span></div>
+        <div><strong>24K</strong><span>Followers</span></div>
+        <div><strong>4.9★</strong><span>Rating</span></div>
+      </div>
+
+      <div class="social-row" id="socialRow" aria-label="Social links"></div>
+
+      <div class="share-row">
+        <button class="share-btn primary" id="shareBtn">
+          <span>↗</span> Share profile
+        </button>
+        <button class="share-btn" id="copyBtn">
+          <span>⧉</span> Copy link
+        </button>
+      </div>
+    </section>
+
+    <section class="links-section reveal reveal-delay-1">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">MY SPACE</span>
+          <h2>Find me online</h2>
+        </div>
+        <span class="live-pill"><i></i> Live</span>
+      </div>
+
+      <div class="links-list" id="linksList"></div>
+    </section>
+
+    <section class="featured-card reveal reveal-delay-2" id="featuredCard">
+      <div class="featured-glow"></div>
+      <div class="featured-icon" id="featuredIcon">▶</div>
+      <div class="featured-copy">
+        <span class="eyebrow" id="featuredEyebrow">FEATURED</span>
+        <h3 id="featuredTitle">Watch my latest video</h3>
+        <p id="featuredDescription">New builds, tutorials and behind-the-scenes content.</p>
+      </div>
+      <a class="featured-arrow" id="featuredLink" href="#" target="_blank" rel="noopener">↗</a>
+    </section>
+
+    <section class="contact-card reveal reveal-delay-3">
+      <div class="contact-copy">
+        <span class="eyebrow">LET'S CONNECT</span>
+        <h3>Have an idea?</h3>
+        <p>Send a message and let's build something cool.</p>
+      </div>
+      <a class="contact-btn" id="contactBtn" href="mailto:hello@example.com">Email me</a>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> <span id="footerName">Silent Gamer</span></span>
+      <span class="footer-sep">•</span>
+      <span>Made with <b>✦</b> Social Tree</span>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
