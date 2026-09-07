@@ -1,0 +1,12 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:#07080d;color:#fff;font-family:Inter,system-ui,sans-serif}
+.bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 50% 5%,#25264a,#111329 25%,#07080d 62%)}
+.container{width:min(680px,92%);margin:auto;padding:54px 0 28px}
+.profile{text-align:center;position:relative}.avatar{width:104px;height:104px;margin:auto;border:1px solid #ffffff40;border-radius:32px;display:grid;place-items:center;font-size:30px;font-weight:900;background:linear-gradient(145deg,#24263d,#10111b);box-shadow:0 20px 60px #0008}
+.verified{position:absolute;top:76px;right:calc(50% - 58px);width:25px;height:25px;border-radius:50%;background:#5865f2;border:3px solid #111329;display:grid;place-items:center;font-size:12px}
+h1{font-size:32px;margin-top:18px}.handle{color:#aeb1c7;font-size:14px;margin-top:4px}.bio{color:#d8d9e5;margin-top:13px;font-size:15px}
+.socials{display:flex;justify-content:center;gap:10px;margin-top:20px}.socials a{width:40px;height:40px;display:grid;place-items:center;border:1px solid #ffffff1c;border-radius:13px;background:#ffffff0f;color:#fff;text-decoration:none;font-size:18px}
+.links{display:grid;gap:14px;margin-top:36px}.link-card{min-height:78px;padding:12px 16px;display:grid;grid-template-columns:48px 1fr 32px;align-items:center;gap:12px;text-decoration:none;color:#fff;border:1px solid #ffffff1a;border-radius:22px;background:#ffffff10;backdrop-filter:blur(18px);transition:.2s}.link-card:hover{transform:translateY(-3px);background:#ffffff18}
+.icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;font-weight:900;font-size:21px}.youtube{background:#ff0033}.discord{background:#5865f2}.instagram{background:linear-gradient(135deg,#feda75,#d62976,#4f5bd5)}
+.link-card strong{display:block;font-size:16px}.link-card small{display:block;color:#aeb1c7;font-size:12px;margin-top:3px}.link-card b{font-size:20px;color:#8f93aa;text-align:center}footer{text-align:center;color:#70748c;font-size:12px;margin-top:34px}
+@media(max-width:500px){.container{padding-top:36px}.avatar{width:92px;height:92px}h1{font-size:28px}.verified{top:65px}.link-card{border-radius:18px}}
